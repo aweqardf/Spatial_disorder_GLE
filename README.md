@@ -7,8 +7,8 @@ Complex environments, such as glass-forming liquids or disordered media, present
 ## Installation
 ```bash
 # Clone the repository
-git clone https://github.com/aweqardf/SD-GLE.git
-cd SD-GLE
+git clone https://github.com/aweqardf/Spatial_disorder_GLE.git
+cd Spatial_disorder_GLE
 
 # Install required dependencies
 pip install numpy scipy torch gpytorch
