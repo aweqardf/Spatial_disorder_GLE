@@ -327,7 +327,7 @@ def main():
                 kl_val = kl.detach().cpu().item()
                 ll_val = ll.detach().cpu().item()
             print(
-                f"Epoch {ep:4d} | loss={loss.item():.6f} | A={A_est} | ap={ap_est} | B={B_est} | ls={ls_val:.4f} | os={os_val:.4f} | ll={ll_val:.2f} | kl={kl_val:.2f}")
+                f"Epoch {ep:4d} | loss={loss.item():.6f} | ll={ll_val:.2f} | kl={kl_val:.2f}")
 
     # ============================================================
     # 5. Visualization: Memory Kernel and Spatial Kernel
