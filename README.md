@@ -54,23 +54,3 @@ The second command writes a single MSD comparison figure with a reference
 trajectory, the fitted SD-GLE model, and a GLE baseline without spatial
 disorder.
 
-## Notes
-
-The memory parameters are shared across replicas. The inducing values are
-replica-batched. The inducing locations start from the same grid for every
-replica; with `--learn-inducing`, each replica can move its own locations
-independently. Spatial kernel hyperparameters are shared.
-
-For matrix-memory inference, `spd_skew` is the recommended parameterization: it
-allows elastic coupling while keeping a positive dissipative part. The
-unconstrained `free` mode is useful for diagnostics, but can overfit.
-
-The joint spatial/memory likelihood has a scale degeneracy, so the default
-uses a weak log prior on the spatial lengthscale and outputscale. For real data,
-set the prior centers from a trusted spatial estimate or a conservative
-initialization.
-
-## Citation
-
-If you use this code, please cite the associated SD-GLE manuscript and this
-repository.
