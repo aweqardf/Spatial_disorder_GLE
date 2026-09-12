@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
-"""Command-line entry point for the stable SD-GLE core."""
+"""Command-line entry point for the synthetic SD-GLE comparison."""
 
-from sdgle_core import main
+from synthetic_comparison import main
 
 
 if __name__ == "__main__":
